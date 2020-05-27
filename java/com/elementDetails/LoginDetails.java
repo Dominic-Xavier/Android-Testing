@@ -8,7 +8,7 @@ import io.appium.java_client.MobileElement;
 
 public class LoginDetails extends AndroidTestBase {
 	
-	public static WebElement userName() {
+	public static MobileElement userName() {
 		return driver.findElement(By.id("com.myapp.finance:id/user"));
 	}
 	

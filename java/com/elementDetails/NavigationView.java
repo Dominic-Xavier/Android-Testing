@@ -28,4 +28,8 @@ public class NavigationView extends AndroidTestBase {
 		return driver.findElement(By.id("com.myapp.finance:id/quit"));
 	}
 	
+	public static MobileElement totalExpenseIncomeClose() {
+		return driver.findElement(By.id("com.myapp.finance:id/quit_recycler"));
+	}
+	
 }

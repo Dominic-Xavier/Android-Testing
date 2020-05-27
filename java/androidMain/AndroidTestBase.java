@@ -12,7 +12,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class AndroidTestBase {
 	
-	public static AndroidDriver<MobileElement> driver;
+	public static WebDriver driver;
 	
 	public static void setUp() throws MalformedURLException {
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -28,5 +28,9 @@ public class AndroidTestBase {
 		
 		System.out.println("Application started");
 		
+	}
+	
+	public static void backButtonClick() {
+		driver.navigate().back();
 	}
 }

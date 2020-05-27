@@ -23,6 +23,8 @@ public class DisplayDate extends AndroidTestBase {
 		return driver.findElement(By.id("android:id/button1"));
 	}
 	
-	
-	
+	public static MobileElement close() {
+		return driver.findElement(By.id("com.myapp.finance:id/cl")); 
+	}
+
 }
